@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Challenge - Product Preview Card Component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="margin: 0;padding: 0;border: 0;background-color: #F0EBE0">
+
+    <div class="flex justify-center items-center min-h-[502px] h-screen">
+        <div class="grid grid-col-1 lg:grid-cols-2 max-w-2xl mx-2 rounded-lg bg-white">
+            <div>
+                <img class="rounded-t-lg lg:hidden " src="{% static 'images/image-product-mobile.jpg' %}" alt="Preview" />
+                <img class="hidden rounded-l-lg lg:block" src="{% static 'images/image-product-desktop.jpg' %}"
+                    alt="Preview" />
+            </div>
+    
+            <div class="flex-col p-8 space-y-5">
+                <div>
+                    <p class="font-mono text-gray-500 tracking-widest scale-y-75">
+                        PERFUME
+                    </p>
+                </div>
+    
+                <div>
+                    <p class="font-serif text-4xl font-bold">
+                        Gabrielle Essence Eau De Parfum
+                    </p>
+                </div>
+    
+                <div>
+                    <p class="font-sans text-lg text-gray-500 scale-y-90">
+                        A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the
+                        House of CHANEL.
+                    </p>
+                </div>
+    
+                <div class="flex items-center space-x-8">
+                    <div class="flex-row">
+                        <p class="font-serif text-4xl text-green-700">
+                            $149.99
+                        </p>
+                    </div>
+                    <div class="flew-row">
+                        <p class="line-through text-sm text-gray-500 ">
+                            $169.99
+    
+                        </p>
+                    </div>
+                </div>
+    
+                <div>
+                    <button class="bg-green-700 min-w-full py-4 rounded-lg">
+                        <div class="flex justify-center items-center space-x-3">
+                            <div class="flex-row">
+                                <img src="{% static 'images/icon-cart.svg' %}" alt="cart" />
+                            </div>
+                            <div class="flex-row">
+                                <p class="text-white">
+                                    Add to Cart
+                                </p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
